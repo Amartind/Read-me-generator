@@ -28,7 +28,7 @@ You will need to have these dependancies installed by running:
 First you need to have the dependencies installed and then you can open up the terminal and run index.js(this files name) with node and you should be then prompted with a series of questions which when 
 complete will provide a almost full readme file with the need to insert pictures/videos for each project.
 
-https://www.awesomescreenshot.com/video/14219019.mp4    
+https://www.awesomescreenshot.com/video/14219019   
     
 ## Credits
     
