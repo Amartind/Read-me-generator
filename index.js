@@ -124,5 +124,5 @@ inquire
     ])
     .then ( (response) => {
         let filledForm = readme(response.username,response.email,response.project,response.description,response.license,response.idepend,response.rtests,response.usage,response.contribute,response.credits);
-        fs.writeFile("README.md", filledForm , err => err?console.log(err) :"")
+        fs.writeFile("./Output/README.md", filledForm , err => err?console.log(err) :"")
     });
