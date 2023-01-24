@@ -19,7 +19,8 @@ This will help streamline the readme making process and let us focus on other im
 ## Installation
     
 You will need to have these dependancies installed by running:
-npm install
+
+>   npm install
     
 ## Usage
     
@@ -27,11 +28,7 @@ npm install
 First you need to have the dependencies installed and then you can open up the terminal and run index.js(this files name) with node and you should be then prompted with a series of questions which when 
 complete will provide a almost full readme file with the need to insert pictures/videos for each project.
 
-To add a screenshot, create an 'assets/images'folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-    
-    '''md
-    ![alt text](assets/images/screenshot.png)
-    '''
+https://www.awesomescreenshot.com/video/14219019.mp4    
     
 ## Credits
     
@@ -57,7 +54,8 @@ Please Don't
 ## Tests
 
 Please run this to make use everything works as it should.
-npm tests
+
+>    npm tests
 
 ## Questions
 
