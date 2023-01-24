@@ -1,7 +1,7 @@
 const inquire = require("inquirer")
 const fs = require('fs')
 const readme = (username,email,project,description,license,idepend,rtests,usage,contribute,credits) =>{
-    return `# <${project}> 
+    return `# ${project} 
 ![License](https://img.shields.io/badge/License-${license}-blue)
 ## Description
     
@@ -19,12 +19,12 @@ ${description}
 - [Tests](#test)
 - [Questions](#questions)
     
-## Installation(#installation)
+## Installation (#installation)
     
 You will need to have these dependancies installed by running:
 ${idepend}
     
-## Usage(#usage)
+## Usage (#usage)
     
     
 ${usage}
@@ -35,20 +35,20 @@ To add a screenshot, create an 'assets/images'folder in your repository and uplo
     ![alt text](assets/images/screenshot.png)
     '''
     
-## Credits(#credits)
+## Credits (#credits)
     
 ${credits}
     
-## License(#license)
+## License (#license)
     
 [${license}](https://www.google.com/search?q=what+can+i+do+with+a+${license}+license)
     
     
-## Features(#features)
+## Features (#features)
     
 If your project has a lot of features, list them here.
     
-## How to Contribute(#contribute)
+## How to Contribute (#contribute)
 
 If you are going to contribute please follow these rules:
 ${contribute}
@@ -56,12 +56,12 @@ ${contribute}
 [Contributor Covenant](https://www.contributor-covenant.org/)
 
 
-## Tests(#test)
+## Tests (#test)
 
 Please run this to make use everything works as it should.
 ${rtests}
 
-## Questions(#questions)
+## Questions (#questions)
 
 If there are any questions about this feel free to contact me :
 https://www.github.com/${username}
