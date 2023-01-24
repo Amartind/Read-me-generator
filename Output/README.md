@@ -1,10 +1,12 @@
-# <README Developer> MIT
+# README Developer 
 
-    ## Description
+MIT
+
+## Description
     
     This will help streamline making a readme file so that we can focus on more important things on the project
     
-    ## Table of Contents (Optional)
+## Table of Contents (Optional)
     
     
     - [Installation](#installation)
@@ -12,12 +14,12 @@
     - [Credits](#credits)
     - [License](#license)
     
-    ## Installation
+## Installation
     
     You will need to have these dependancies:
     npm install
     
-    ## Usage
+## Usage
     
     Provide instructions and examples for use. Include screenshots as needed.
     
@@ -29,23 +31,20 @@
         ![alt text](assets/images/screenshot.png)
         '''
     
-    ## Credits
+## Credits
     
     No collaborators
     
-    ## License
+## License
     
     MIT
-    ---
+ 
     
-    🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-    
-    
-    ## Features
+## Features
     
     If your project has a lot of features, list them here.
     
-    ## How to Contribute
+## How to Contribute
     
     [Contributor Covenant](https://www.contributor-covenant.org/)
     Please don't
@@ -53,9 +52,11 @@
     
     npm tests
 
-    ## Questions
+## Questions
 
     If there are any questions about this feel free to contact me :
-    https://www.github.com/Amartind
+    
+    https://www.github.com/Amartind    
+    
     yourampmfriend@hotmail.com
     
