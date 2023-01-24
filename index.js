@@ -1,66 +1,71 @@
 const inquire = require("inquirer")
 const fs = require('fs')
 const readme = (username,email,project,description,license,idepend,rtests,usage,contribute,credits) =>{
-    return `# <${project}> ${license}
+    return `# <${project}> 
+![License](https://img.shields.io/badge/License-${license}-blue)
+## Description
+    
+${description}
+    
+## Table of Contents (Optional)
+    
+    
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Features](#features)
+- [How to Contribute](#contribute)
+- [Tests](#test)
+- [Questions](#questions)
+    
+## Installation(#installation)
+    
+You will need to have these dependancies installed by running:
+${idepend}
+    
+## Usage(#usage)
+    
+    
+${usage}
 
-    ## Description
+To add a screenshot, create an 'assets/images'folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
     
-    ${description}
+    '''md
+    ![alt text](assets/images/screenshot.png)
+    '''
     
-    ## Table of Contents (Optional)
+## Credits(#credits)
+    
+${credits}
+    
+## License(#license)
+    
+[${license}](https://www.google.com/search?q=what+can+i+do+with+a+${license}+license)
     
     
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Credits](#credits)
-    - [License](#license)
+## Features(#features)
     
-    ## Installation
+If your project has a lot of features, list them here.
     
-    You will need to have these dependancies:
-    ${idepend}
-    
-    ## Usage
-    
-    Provide instructions and examples for use. Include screenshots as needed.
-    
-    ${usage}
+## How to Contribute(#contribute)
 
-    To add a screenshot, create an 'assets/images'folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+If you are going to contribute please follow these rules:
+${contribute}
     
-        '''md
-        ![alt text](assets/images/screenshot.png)
-        '''
-    
-    ## Credits
-    
-    ${credits}
-    
-    ## License
-    
-    ${license}
-    ---
-    
-    🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-    
-    
-    ## Features
-    
-    If your project has a lot of features, list them here.
-    
-    ## How to Contribute
-    
-    [Contributor Covenant](https://www.contributor-covenant.org/)
-    ${contribute}
-    ## Tests
-    
-    ${rtests}
+[Contributor Covenant](https://www.contributor-covenant.org/)
 
-    ## Questions
 
-    If there are any questions about this feel free to contact me :
-    https://www.github.com/${username}
-    ${email}
+## Tests(#test)
+
+Please run this to make use everything works as it should.
+${rtests}
+
+## Questions(#questions)
+
+If there are any questions about this feel free to contact me :
+https://www.github.com/${username}
+${email}
     `
 }
 inquire
@@ -103,7 +108,7 @@ inquire
         },
         {
             type:"input",
-            message:"What does the user need to know about using the repo?",
+            message:"Provide instructions for use:",
             name:'usage',
         },
         {
@@ -119,5 +124,5 @@ inquire
     ])
     .then ( (response) => {
         let filledForm = readme(response.username,response.email,response.project,response.description,response.license,response.idepend,response.rtests,response.usage,response.contribute,response.credits);
-        fs.writeFile("./Output/README.md", filledForm , err => err?console.log(err) :"")
+        fs.writeFile("README.md", filledForm , err => err?console.log(err) :"")
     });
