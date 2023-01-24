@@ -1,6 +1,6 @@
 # README Developer 
 
-MIT
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 ## Description
     
